@@ -1,0 +1,31 @@
+
+> client@0.0.0 lint
+> eslint .
+
+
+D:\self project\KUCH V\client\src\components\charts\CryptoChartCanvas.jsx
+  4:8  error  'clsx' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\self project\KUCH V\client\src\components\layout\AdminSidebar.jsx
+  5:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+D:\self project\KUCH V\client\src\components\layout\Sidebar.jsx
+  5:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+D:\self project\KUCH V\client\src\hooks\useAuth.jsx
+  48:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+D:\self project\KUCH V\client\src\pages\admin\Deposits.jsx
+  1:20  error  'useEffect' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\self project\KUCH V\client\src\pages\dashboard\Overview.jsx
+  109:42  error  'Icon' is defined but never used  no-unused-vars
+
+D:\self project\KUCH V\client\src\pages\dashboard\Plans.jsx
+  6:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\self project\KUCH V\client\src\services\auth.service.js
+  56:15  error  'error' is defined but never used  no-unused-vars
+
+Γ£û 8 problems (8 errors, 0 warnings)
+

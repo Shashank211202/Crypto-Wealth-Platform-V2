@@ -1,0 +1,100 @@
+
+> client@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 21 modules transformed.
+Γ£ù Build failed in 629ms
+error during build:
+[vite:esbuild] Transform failed with 9 errors:
+D:/self project/KUCH V/client/src/pages/admin/AdminTickets.jsx:6:9: ERROR: The symbol "useState" has already been declared
+D:/self project/KUCH V/client/src/pages/admin/AdminTickets.jsx:7:9: ERROR: The symbol "Card" has already been declared
+D:/self project/KUCH V/client/src/pages/admin/AdminTickets.jsx:8:9: ERROR: The symbol "Button" has already been declared
+D:/self project/KUCH V/client/src/pages/admin/AdminTickets.jsx:9:9: ERROR: The symbol "Search" has already been declared
+D:/self project/KUCH V/client/src/pages/admin/AdminTickets.jsx:9:17: ERROR: The symbol "MessageSquare" has already been declared
+...
+file: D:/self project/KUCH V/client/src/pages/admin/AdminTickets.jsx:6:9
+
+The symbol "useState" has already been declared
+4  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+5  |  
+6  |  import { useState, useEffect } from 'react';
+   |           ^
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+
+The symbol "Card" has already been declared
+5  |  
+6  |  import { useState, useEffect } from 'react';
+7  |  import { Card } from '../../components/ui/Card';
+   |           ^
+8  |  import { Button } from '../../components/ui/Button';
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+
+The symbol "Button" has already been declared
+6  |  import { useState, useEffect } from 'react';
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+   |           ^
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+10 |  import { adminService } from '../../services/admin.service';
+
+The symbol "Search" has already been declared
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+   |           ^
+10 |  import { adminService } from '../../services/admin.service';
+11 |  
+
+The symbol "MessageSquare" has already been declared
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+   |                   ^
+10 |  import { adminService } from '../../services/admin.service';
+11 |  
+
+The symbol "CheckCircle" has already been declared
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+   |                                  ^
+10 |  import { adminService } from '../../services/admin.service';
+11 |  
+
+The symbol "XCircle" has already been declared
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+   |                                               ^
+10 |  import { adminService } from '../../services/admin.service';
+11 |  
+
+The symbol "Clock" has already been declared
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+   |                                                        ^
+10 |  import { adminService } from '../../services/admin.service';
+11 |  
+
+The symbol "ChevronRight" has already been declared
+7  |  import { Card } from '../../components/ui/Card';
+8  |  import { Button } from '../../components/ui/Button';
+9  |  import { Search, MessageSquare, CheckCircle, XCircle, Clock, ChevronRight } from 'lucide-react';
+   |                                                               ^
+10 |  import { adminService } from '../../services/admin.service';
+11 |  
+
+    at failureErrorWithLog (D:\self project\KUCH V\client\node_modules\esbuild\lib\main.js:1467:15)
+    at D:\self project\KUCH V\client\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (D:\self project\KUCH V\client\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (D:\self project\KUCH V\client\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (D:\self project\KUCH V\client\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
