@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
+import dns from "dns";
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
 dotenv.config();
 
 let cached = global.mongoose;
@@ -22,6 +26,11 @@ export const connectDB = async () => {
       serverSelectionTimeoutMS: 5000,
       socketTimeoutMS: 45000,
     };
+    // console.log("Mongo URI:", process.env.MONGO_URI); // Added to check env
+//     console.log(
+//     "Mongo Host:",
+//     // process.env.MONGO_URI?.match(/@([^/]+)/)?.[1] // Added to check host name
+// );
 
     cached.promise = mongoose.connect(process.env.MONGO_URI, opts).then((mongoose) => {
       console.log("MongoDB connected", mongoose.connection.host);
